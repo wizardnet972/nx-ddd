@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-ddd/booking/bar/feature-view": [
+        "libs/booking/bar/feature-view/src/index.ts"
+      ],
+      "@nx-ddd/booking/domain": ["libs/booking/domain/src/index.ts"],
+      "@nx-ddd/booking/foo/feature-view": [
+        "libs/booking/foo/feature-view/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,6 +1,11 @@
 {
   "version": 2,
   "projects": {
+    "booking": "apps/booking",
+    "booking-bar-feature-view": "libs/booking/bar/feature-view",
+    "booking-domain": "libs/booking/domain",
+    "booking-e2e": "apps/booking-e2e",
+    "booking-foo-feature-view": "libs/booking/foo/feature-view",
     "ddd-ui": "apps/ddd-ui",
     "ddd-ui-e2e": "apps/ddd-ui-e2e"
   }
