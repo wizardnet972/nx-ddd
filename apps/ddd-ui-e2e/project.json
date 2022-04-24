@@ -1,0 +1,28 @@
+{
+  "root": "apps/ddd-ui-e2e",
+  "sourceRoot": "apps/ddd-ui-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/ddd-ui-e2e/cypress.json",
+        "devServerTarget": "ddd-ui:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "ddd-ui:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/ddd-ui-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["ddd-ui"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "ddd-ui": "apps/ddd-ui",
+    "ddd-ui-e2e": "apps/ddd-ui-e2e"
+  }
+}
